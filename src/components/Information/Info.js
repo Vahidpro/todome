@@ -15,7 +15,10 @@ const Info = (props) => {
 				undefined,
 				options
 			)}`}</div>
-			<div className="remained"></div>
+			<div className="remained">
+				{" "}
+				<span>3</span> Tasks remained today.
+			</div>
 		</div>
 	);
 };
