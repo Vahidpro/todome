@@ -1,13 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Header from "./components/Header/Header";
+import Info from "./components/Information/Info";
+import TaskInput from "./components/InputSection/TaskInput";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<h2>Todo Me!</h2>
-			</header>
+			<Header></Header>
+			<TaskInput></TaskInput>
+			<Info></Info>
 		</div>
 	);
 }

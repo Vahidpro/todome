@@ -1,0 +1,39 @@
+.input-container {
+	border-radius: 0.5rem;
+	display: flex;
+}
+
+input {
+	background: #d9d9d9;
+	border-radius: 10px;
+	font-family: "Arial";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 17px;
+	margin: 1.5rem;
+	border: none;
+	width: 70%;
+	height: 45px;
+	left: 31px;
+	top: 71px;
+}
+
+button {
+	background: #d9d9d9;
+	border-radius: 10px;
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.7rem;
+	line-height: 17px;
+	margin: 1.5rem;
+	border: none;
+	width: 30%;
+	height: 45px;
+	left: 31px;
+	top: 71px;
+}
+input {
+	padding-left: 1rem;
+}
