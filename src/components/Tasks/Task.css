@@ -1,0 +1,26 @@
+.task {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: 3rem;
+	padding-left: 1rem;
+}
+
+.icons-container {
+	display: flex;
+	justify-content: flex-end;
+	width: 30%;
+}
+.icons-container > button {
+	background: #dddddd;
+	border-radius: 10px;
+	font-size: 1.7rem;
+	margin: 0.1rem;
+	border: none;
+	cursor: pointer;
+}
+
+.title {
+	width: 70%;
+	text-align: left;
+}

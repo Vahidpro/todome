@@ -3,6 +3,7 @@ import Filters from "./components/Filters/Filters";
 import Header from "./components/Header/Header";
 import Info from "./components/Information/Info";
 import TaskInput from "./components/InputSection/TaskInput";
+import TasksList from "./components/Tasks/TasksList";
 
 function App() {
 	return (
@@ -11,6 +12,7 @@ function App() {
 			<TaskInput></TaskInput>
 			<Info></Info>
 			<Filters></Filters>
+			<TasksList></TasksList>
 		</div>
 	);
 }

@@ -19,7 +19,7 @@ input {
 	top: 71px;
 }
 
-button {
+.btn-add {
 	background: #d9d9d9;
 	border-radius: 10px;
 	font-family: "Poppins", sans-serif;
@@ -33,6 +33,7 @@ button {
 	height: 45px;
 	left: 31px;
 	top: 71px;
+	cursor: pointer;
 }
 input {
 	padding-left: 1rem;

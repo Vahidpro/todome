@@ -4,7 +4,7 @@ const TaskInput = (props) => {
 		<form>
 			<div className="input-container">
 				<input placeholder="New Task..." type="text"></input>
-				<button>Add</button>
+				<button className="btn-add">Add</button>
 			</div>
 		</form>
 	);
