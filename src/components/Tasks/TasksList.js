@@ -3,10 +3,9 @@ import "./TasksList.css";
 const TasksList = (props) => {
 	return (
 		<div className="tasks-container">
-			<Task title="Daily meeting with team"> </Task>
-			<Task title="Irrigation"></Task>
-			<Task title="Visit family"></Task>
-			<Task title="Hanging out with friends"></Task>
+			{props.tasks.map((task) => (
+				<Task key={task.id} title={task.title} status={task.status}></Task>
+			))}
 		</div>
 	);
 };
