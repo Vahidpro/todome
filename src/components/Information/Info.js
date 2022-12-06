@@ -17,7 +17,7 @@ const Info = (props) => {
 			)}`}</div>
 			<div className="remained">
 				{" "}
-				<span>3</span> Tasks remained today.
+				<span>0</span> Tasks remained today.
 			</div>
 		</div>
 	);

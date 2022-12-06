@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Filters from "./components/Filters/Filters";
 import Header from "./components/Header/Header";
@@ -6,35 +7,37 @@ import TaskInput from "./components/InputSection/TaskInput";
 import TasksList from "./components/Tasks/TasksList";
 
 function App() {
-	const dummyTasks = [
-		{
-			id: 1,
-			title: "Daily meeting with team",
-			status: "active",
-		},
-		{
-			id: 2,
-			title: "Irrigation",
-			status: "active",
-		},
-		{
-			id: 3,
-			title: "Visit family",
-			status: "active",
-		},
-		{
-			id: 4,
-			title: "Hanging out with friends",
-			status: "active",
-		},
-	];
+	let [tasksList, setTasksList] = useState([]);
+
+	const addTaskHandler = (enteredTitle) => {
+		setTasksList((prevTask) => {
+			const updatedTasks = [...prevTask];
+			updatedTasks.unshift({
+				id: Number((Math.random() * 1000).toFixed()),
+				title: enteredTitle,
+				status: "active",
+			});
+			return updatedTasks;
+		});
+	};
+
+	let content = (
+		<p style={{ textAlign: "center", fontWeight: "700", fontSize: "2rem" }}>
+			No Tasks Yet!
+		</p>
+	);
+
+	if (tasksList.length > 0) {
+		content = <TasksList tasks={tasksList} />;
+	}
+
 	return (
 		<div className="App">
 			<Header></Header>
-			<TaskInput></TaskInput>
+			<TaskInput onAddTask={addTaskHandler} />
 			<Info></Info>
 			<Filters></Filters>
-			<TasksList tasks={dummyTasks} />
+			{content}
 		</div>
 	);
 }
