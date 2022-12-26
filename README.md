@@ -9,7 +9,7 @@
 - [ ] Edit tasks
 - [ ] Mark tasks as done
 - [ ] Use browser API to save in local storage in order to load tasks after reload
-- [ ] Compure remained tasks
+- [ ] Compute remained tasks
 
 ## Used technologies:
 
