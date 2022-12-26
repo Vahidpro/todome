@@ -9,6 +9,8 @@ const TaskInput = (props) => {
 	};
 	const formSubmitHander = (e) => {
 		e.preventDefault();
+
+		if (title === "") return;
 		props.onAddTask(title);
 	};
 
