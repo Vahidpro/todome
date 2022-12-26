@@ -32,13 +32,13 @@ function App() {
 	}
 
 	return (
-		<div className="App">
+		<>
 			<Header></Header>
 			<TaskInput onAddTask={addTaskHandler} />
 			<Info></Info>
 			<Filters></Filters>
 			{content}
-		</div>
+		</>
 	);
 }
 

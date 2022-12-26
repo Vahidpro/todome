@@ -6,7 +6,6 @@ const TaskInput = (props) => {
 
 	const inputChangeHandler = (e) => {
 		setTitle(e.target.value);
-		// console.log("Value is", e.target.value);
 	};
 	const formSubmitHander = (e) => {
 		e.preventDefault();

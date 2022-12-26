@@ -2,9 +2,9 @@ import { useState } from "react";
 import "./Info.css";
 const Info = (props) => {
 	const options = {
-		weekday: "long",
+		weekday: "short",
 		year: "numeric",
-		month: "long",
+		month: "short",
 		day: "numeric",
 	};
 	const [date] = useState(new Date());
