@@ -1,15 +1,15 @@
-# A Simple Todo app that add, delete and edit tasks
+# A Simple Todo app that can add, delete and edit tasks
 
 ## Task lists:
 
-[x] Add tasks in the list using Add button
-[ ] Show Date on top
-[ ] Filter tasks by dropdown selection
-[ ] Delete tasks
-[ ] Edit tasks
-[ ] Mark tasks as done
-[ ] Use browser API to save in local storage in order to load tasks after reload
-[ ] Compure remained tasks
+- [x] Add tasks in the list using Add button
+- [ ] Show Date on top
+- [ ] Filter tasks by dropdown selection
+- [ ] Delete tasks
+- [ ] Edit tasks
+- [ ] Mark tasks as done
+- [ ] Use browser API to save in local storage in order to load tasks after reload
+- [ ] Compure remained tasks
 
 ## Used technologies:
 
@@ -22,7 +22,7 @@
 
 ## Screenshots
 
-![Screenshot](\src\assets\Screenshot-1.png)
+![Screenshot](..\src\assets\Screenshot-1.png)
 
 ## Available Scripts
 
