@@ -22,7 +22,7 @@
 
 ## Screenshots
 
-![Screenshot](..\src\assets\Screenshot-1.png)
+![Screenshot](/src/assets/Screenshot-1.png)
 
 ## Available Scripts
 
