@@ -3,6 +3,7 @@ import "./TaskInput.css";
 
 const TaskInput = (props) => {
 	const [title, setTitle] = useState("");
+	const [enteredTitleIsValid, setEnteredTitleIsValid] = useState(true);
 
 	const inputChangeHandler = (e) => {
 		setTitle(e.target.value);
@@ -10,7 +11,12 @@ const TaskInput = (props) => {
 	const formSubmitHander = (e) => {
 		e.preventDefault();
 
-		if (title === "") return;
+		if (title.trim() === "") {
+			setEnteredTitleIsValid(false);
+			return;
+		}
+
+		setEnteredTitleIsValid(true);
 		props.onAddTask(title);
 	};
 
@@ -22,6 +28,7 @@ const TaskInput = (props) => {
 					type="text"
 					onChange={inputChangeHandler}
 				></input>
+				{!enteredTitleIsValid && <p>Please enter something!</p>}
 				<button type="submit" className="btn-add">
 					Add
 				</button>
