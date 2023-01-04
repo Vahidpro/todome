@@ -17,9 +17,10 @@ const taskSlice = createSlice({
 				title: newTask.title,
 				status: newTask.status,
 			});
+			state.remainedTasks++;
 		},
 		delete(state, action) {
-			// const id = action.payload;
+			// const task = action.payload;
 		},
 		edit(state) {},
 		done(state) {},

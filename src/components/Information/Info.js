@@ -1,6 +1,8 @@
 import { useState } from "react";
 import "./Info.css";
+import { useSelector } from "react-redux";
 const Info = (props) => {
+	const remained = useSelector((state) => state.task.remainedTasks);
 	const options = {
 		weekday: "short",
 		year: "numeric",
@@ -17,7 +19,7 @@ const Info = (props) => {
 			)}`}</div>
 			<div className="remained">
 				{" "}
-				<span>0</span> Tasks remained today.
+				<span>{remained}</span> Tasks remained today.
 			</div>
 		</div>
 	);
