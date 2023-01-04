@@ -1,6 +1,6 @@
 # A Simple Todo app that can add, delete and edit tasks
 
-## Task lists:
+## Task lists
 
 - [x] Add tasks in the list using Add button
 - [ ] Show Date on top
@@ -11,7 +11,7 @@
 - [ ] Use browser API to save in local storage in order to load tasks after reload
 - [ ] Compute remained tasks
 
-## Used technologies:
+## Used technologies
 
 - JavaScript
 - React
