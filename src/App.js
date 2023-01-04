@@ -22,7 +22,7 @@ function App() {
 	};
 
 	let content = (
-		<p style={{ textAlign: "center", fontWeight: "700", fontSize: "2rem" }}>
+		<p style={{ textAlign: "center", fontWeight: "500", fontSize: "1.5rem" }}>
 			No Tasks Yet!
 		</p>
 	);
