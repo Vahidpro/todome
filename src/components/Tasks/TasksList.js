@@ -6,15 +6,29 @@ const TasksList = (props) => {
 
 	return (
 		<div className="tasks-container">
-			{tasksList.map((task) => (
-				<Task key={task.key} title={task.title} status={task.status} />
-			))}
+			{tasksList &&
+				tasksList.length > 0 &&
+				tasksList.map((task) => (
+					<Task
+						key={task.key}
+						id={task.key}
+						title={task.title}
+						status={task.status}
+					/>
+				))}
 
-			{/* Before redux approach: */}
-			{/* {props.tasks.map((task) => (
-				<Task key={task.id} title={task.title} status={task.status}></Task>
-			))} */}
-			{console.log(tasksList)}
+			{/* Non-Redux approach: */}
+			{props.tasks &&
+				props.tasks.length > 0 &&
+				props.tasks.map((task) => (
+					<Task
+						key={task.id}
+						id={task.id}
+						title={task.title}
+						status={task.status}
+						onDelete={props.onDeleteTask}
+					/>
+				))}
 		</div>
 	);
 };

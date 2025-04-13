@@ -13,14 +13,15 @@ const taskSlice = createSlice({
 
 			state.tasks.push({
 				key: ++state.id,
-				// Number((Math.random() * 1000).toFixed()),
 				title: newTask.title,
 				status: newTask.status,
 			});
 			state.remainedTasks++;
 		},
 		delete(state, action) {
-			// const task = action.payload;
+			const taskId = action.payload;
+			state.tasks = state.tasks.filter((task) => task.key !== taskId);
+			state.remainedTasks = state.tasks.length;
 		},
 		edit(state) {},
 		done(state) {},

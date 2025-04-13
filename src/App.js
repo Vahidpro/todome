@@ -1,25 +1,15 @@
-import { useState } from "react";
 import "./App.css";
 import Filters from "./components/Filters/Filters";
 import Header from "./components/Header/Header";
 import Info from "./components/Information/Info";
 import TaskInput from "./components/InputSection/TaskInput";
 import TasksList from "./components/Tasks/TasksList";
+import { useSelector } from "react-redux";
 
 function App() {
-	let [tasksList, setTasksList] = useState([]);
+	const tasksList = useSelector((state) => state.task.tasks);
 
-	const addTaskHandler = (enteredTitle) => {
-		setTasksList((prevTask) => {
-			const updatedTasks = [...prevTask];
-			updatedTasks.unshift({
-				id: Number((Math.random() * 1000).toFixed()),
-				title: enteredTitle,
-				status: "active",
-			});
-			return updatedTasks;
-		});
-	};
+	const addTaskHandler = () => {};
 
 	let content = (
 		<p style={{ textAlign: "center", fontWeight: "500", fontSize: "1.5rem" }}>
@@ -27,8 +17,8 @@ function App() {
 		</p>
 	);
 
-	if (tasksList.length > 0) {
-		content = <TasksList tasks={tasksList} />;
+	if (tasksList && tasksList.length > 0) {
+		content = <TasksList />;
 	}
 
 	return (
