@@ -16,19 +16,6 @@ const TasksList = (props) => {
 						status={task.status}
 					/>
 				))}
-
-			{/* Non-Redux approach: */}
-			{props.tasks &&
-				props.tasks.length > 0 &&
-				props.tasks.map((task) => (
-					<Task
-						key={task.id}
-						id={task.id}
-						title={task.title}
-						status={task.status}
-						onDelete={props.onDeleteTask}
-					/>
-				))}
 		</div>
 	);
 };

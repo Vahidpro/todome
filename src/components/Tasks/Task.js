@@ -6,11 +6,7 @@ const Task = (props) => {
 	const dispatch = useDispatch();
 
 	const deleteHandler = () => {
-		if (props.onDelete) {
-			props.onDelete(props.id);
-		} else {
-			dispatch(taskActions.delete(props.id));
-		}
+		dispatch(taskActions.delete(props.id));
 	};
 
 	return (
